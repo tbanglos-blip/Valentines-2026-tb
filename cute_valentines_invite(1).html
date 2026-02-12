@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valentine's Invite 💖</title>
+
+  <!-- Cute Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ffd6e7, #ffeaf4);
+      font-family: 'Quicksand', sans-serif;
+      overflow-x: hidden;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: white;
+      padding: 3rem 2.5rem;
+      border-radius: 25px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(255, 105, 180, 0.25);
+      max-width: 900px;
+      position: relative;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      color: #ff4d88;
+      font-size: 2.7rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .heart {
+      font-size: 2rem;
+      animation: heartbeat 1.2s infinite;
+      display: inline-block;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      25% { transform: scale(1.2); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.2); }
+    }
+
+    .details {
+      background: #fff0f6;
+      padding: 1rem;
+      border-radius: 15px;
+      margin-top: 1.5rem;
+      font-weight: 600;
+      color: #ff4d88;
+    }
+
+    .gallery {
+      margin-top: 2.5rem;
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .polaroid {
+      background: white;
+      padding: 12px 12px 55px 12px;
+      width: 220px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      border-radius: 6px;
+      transform: rotate(-2deg);
+      transition: transform 0.3s ease;
+    }
+
+    .polaroid:nth-child(2) {
+      transform: rotate(3deg);
+    }
+
+    .polaroid:nth-child(3) {
+      transform: rotate(-4deg);
+    }
+
+    .polaroid:hover {
+      transform: rotate(0deg) scale(1.05);
+    }
+
+    .polaroid img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      right: 0;
+      font-family: 'Gloria Hallelujah', cursive;
+      color: #ff4d88;
+      font-size: 0.95rem;
+    }
+
+    .polaroid-wrapper {
+      position: relative;
+      text-align: center;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    /* Floating hearts */
+    .floating-heart {
+      position: fixed;
+      color: #ff99bb;
+      animation: rise 8s linear infinite;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    @keyframes rise {
+      from {
+        transform: translateY(100vh);
+      }
+      to {
+        transform: translateY(-10vh);
+      }
+    }
+
+    .floating-heart:nth-child(1) { left: 10%; font-size: 20px; animation-delay: 0s; }
+    .floating-heart:nth-child(2) { left: 25%; font-size: 26px; animation-delay: 2s; }
+    .floating-heart:nth-child(3) { left: 50%; font-size: 18px; animation-delay: 4s; }
+    .floating-heart:nth-child(4) { left: 70%; font-size: 24px; animation-delay: 1s; }
+    .floating-heart:nth-child(5) { left: 85%; font-size: 16px; animation-delay: 3s; }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 2rem 1.5rem;
+      }
+
+      .polaroid {
+        width: 180px;
+      }
+
+      .polaroid img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Hearts -->
+  <div class="floating-heart">💗</div>
+  <div class="floating-heart">💖</div>
+  <div class="floating-heart">💘</div>
+  <div class="floating-heart">💝</div>
+  <div class="floating-heart">💕</div>
+
+  <div class="card">
+    <h1>Be My Valentine? <span class="heart">❤️</span></h1>
+
+    <p>
+      Hi <strong>Bebechin!!</strong>! 🌸<br><br>
+      Nais kitang masama this 14 maaari ba pls pls pls ✨
+    </p>
+
+    <div class="details">
+      📅 February 14 <br>
+      📍 Star City
+    </div>
+
+    <div class="gallery">
+      <div class="polaroid-wrapper">
+        <div class="polaroid">
+          <img src="https://drive.google.com/thumbnail?id=1m6OLPT5Uah2JnjvryVHBTBSm7WTnkc25&sz=w1000" alt="Us together">
+          <div class="caption">my favorite selfies 💕</div>
+        </div>
+      </div>
+
+      <div class="polaroid-wrapper">
+        <div class="polaroid">
+          <img src="https://drive.google.com/thumbnail?id=1CLGDBuRqg_mSgfRMIF8KUJeYI9-zehdn&sz=w1000" alt="Cute mirror pic">
+          <div class="caption">partners in crime 😎</div>
+        </div>
+      </div>
+
+      <div class="polaroid-wrapper">
+        <div class="polaroid">
+          <img src="https://drive.google.com/thumbnail?id=1zpvUiBZAKc0ymL-65dy9AIeaTiPrQtwT&sz=w1000" alt="Date vibes">
+          <div class="caption">more dates pls 💖</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Made with love 💕
+    </div>
+  </div>
+
+</body>
+</html>
